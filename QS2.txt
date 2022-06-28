@@ -1,0 +1,9 @@
+// static method 사용 장점 +
+// config에서 private와 public 구분 잘해야함
+// appconfig 테스트중 impl에 검증코드 추가하고 컨테이너에서 구현클래스 호출했는데 부모에는 검증코드 정보가 없어서 그런건지
+// componentscan 사용시 Di단계에서 부모타입이 일치하면 구현체를 어떻게 결정하는지 +
+// @Repository의 부가기능(예외처리) +
+// filter에서 assignable +
+// 필드 주입 지양 +
+// inner class를 static으로 만드는 이유 +
+// 스프링컨테이너와 ac(ac를 사용하지않아도 스프링컨테이너를 사용하는데 문제없나?)

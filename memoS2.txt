@@ -1,0 +1,22 @@
+// 지역변수는 stack에 호출~해제되고 전역변수와 statc은 static에 저장되어 지워지지 않음, 참조 객체나 배열은 Heap에 저장됨
+// Heap의 변수들은 new를 통해 stack의 실제값을 참조해서 리턴함
+- a = new int[5]; // Heap 영역에 5개의 연속된 공간 할당 // 변수 a에 참조값 할당
+- a = new A(); // Heap 메모리에 공간 할당 및 객체(a)에 참조값 할당
+
+// 클래스에 toString메소드 generate시 인자를 한눈에 보는게 가능 *order
+
+// static import로 테스트시 코드 가독성이 더 좋아진다
+
+// 자바코드에선 객체를 내가 만들어서 쓸 수 있지만 생성과 실행을 분리하기 위해 외부에서 생성된 객체를 주입받아 쓰는게 DI
+// 코드의 제어권을 가진 여부에 따라 프레임워크(junit)와 라이브러리 구분
+
+// .class는 특정 클래스의 구조를 담고있는 클래스(필드, 생성자, 메소드 등등)
+
+// beanDefinition : 빈 설정정보(getBeanDef는 상속 이용이 어려움)
+// 빈 등록 방법 1 factory bean(appconfig)을 통해 factory method로 등록 2 제네릭 빈을 이용해 직접 등록(xml)
+
+// private을 쓰면 부모 객체 생성을 제한해 자식을 만들기 어렵다
+
+// non-static inner class는 상위 class에 종속되어 상위 객체 생성이 없으면 불러올 수 없다.
+
+// Dispatcher servlet > interceptor > controller(handler)
